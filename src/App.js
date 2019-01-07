@@ -12,6 +12,8 @@ import ItemsCartElement from './containers/itemsCartElement'
 
 import ControlledPopup from './components/cartItems'
 
+import SearchBarElement from './containers/searchBarElement'
+
 const imageArray = [celticsjersey, bball, macbook];
 
 const shoppingItemsData = [
@@ -47,6 +49,7 @@ class App extends Component {
     return (
       <div className="container">
         {/* <ItemsList shoppingItemsData={shoppingItemsData} /> */}
+        <SearchBarElement />
         <ItemsCartList />
         <ItemsCartElement />
       </div>
